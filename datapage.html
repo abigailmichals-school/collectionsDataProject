@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Abigail Michals Project 3 Core 2 Interaction Studio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="dataPage.css">
+        <link rel="stylesheet" href="https://use.typekit.net/wwu1rvb.css">
+       <!-- donut chart data below  -->
+        <meta charset="utf-8">
+        <!-- Load d3.js & color scale -->
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    </head>
+    <body>
+
+    <!-- header code below  -->
+
+        <div class="header">
+            <div class="innerHeader">
+                <div class="myName">
+                    <h1>abigail michals</h1>
+                </div>
+                <ul class="navigation">
+                    <a href="index.html"><li>home</li></a>
+                    <a href="mailto:micha585@newschool.edu"><li>contact</li></a>
+                </ul>
+            </div>         
+        </div>
+
+    <!-- end of header code  -->
+
+
+    <!-- animal filter code below  -->
+      
+        <div class="dataFilter">
+            <section class="filterName">
+              FILTERS
+            </section>
+            <section class="line"></section>
+            <section class="WorkingFilters">
+              <select id="dropDownBorough">
+                <option value="All"><p>Borough</p></option>
+                <option value="Brooklyn">Brooklyn</option>
+                <option value="Bronx">Bronx</option>
+                <option value="Queens">Queens</option>
+                <option value="Staten Island">Staten Island</option>
+                <option value="Manhattan">Manhattan</option>
+              </select>
+          
+              <select id="dropDownAge">
+                <option value="All"><p>Age</p></option>
+                <option value="Adult">Adult</option>
+                <option value="Juvenile">Juvenile</option>
+                <option value="Infant">Infant</option>
+              </select>  
+          
+              <select id="dropDownCondition">
+                <option value="All"><p>Condition</p></option>
+                <option value="Healthy">Healthy</option>
+                <option value="Unhealthy">Unhealthy</option>
+                <option value="Injured">Injured</option>
+                <option value="DOA">DOA</option>
+                <option value="N/A">N/A</option>
+              </select>
+          
+              <select id="dropDownCall">
+                <option value="All"><p>Call Source</p></option>
+                <option value="Central">Central</option>
+                <option value="Other">Other</option>
+                <option value="Employee">Employee</option>
+                <option value="Public">Public</option>
+              </select>
+            </section>
+          </div>
+          
+          <div id="imageContainer"></div>
+
+        <!-- end of animal filter code  -->
+
+        <!-- pie chart data code below  -->
+
+        <div id="my_dataviz"></div>
+
+        <!-- end of pie chart data code  -->
+        
+
+
+        <!-- animal color key code below  -->
+          
+          <div class="filter-container">
+            <div class="animalFilterTwo">
+                <div class="dog" id="dog"><h1>dog</h1></div>
+                <div class="raccoon" id="raccoon"><h1>raccoon</h1></div>
+                <div class="deer" id="deer"><h1>deer</h1></div>
+              <div class="cat" id="cat"><h1>cat</h1></div>
+              <div class="bird" id="bird"><h1>bird</h1></div>
+            </div>
+          </div>
+
+        <script src="dataPage.js" async defer></script>
+
+        <!-- end of animal color key code  -->
+    </body>
+</html>
