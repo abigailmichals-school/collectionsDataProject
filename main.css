@@ -1,0 +1,161 @@
+html {
+    background-color: #939967;
+}
+
+
+* {
+    text-decoration: none;
+}
+
+
+
+/* header code below  */
+
+
+.header * {
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    float: center;
+    margin: 0 auto;
+    height: 40px;
+    padding:15px 0px 15px;
+    display: block;
+    background-color: #010101;
+
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+.innerHeader{
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    /* background-color: red; */
+
+    /* outline border code below  */
+        /* outline-color: rgb(255, 255, 255);
+        outline-width: 2px;
+        outline-style: dashed;
+        border-radius: 10px; */
+}
+
+.myName{
+    height: 100%;
+    display: table;
+    float: left;
+    margin-left: 20px;
+
+}
+
+.myName h1{
+    font-size: 16px;
+    font-weight: 400;
+    color: #DCDCBF;
+
+    /* font-family: 'Cabin', sans-serif; */
+    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
+
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navigation{
+
+    margin: 0;
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+        /* to give space between the text and the right */
+    padding: 0px 20px;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    /* color: #efebe4; */
+    color: #DCDCBF;
+
+    /* font-family: 'Cabin', sans-serif; */
+    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
+
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.navigation a li:hover{
+    text-decoration: underline;
+    text-decoration-color: #DCDCBF;
+
+}
+/* end of header code  */
+
+
+
+/* title code below  */
+.titleContainer {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .textContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  
+  .arrow img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .titleOne {
+    font-size: 35px;
+    font-family: "henderson-slab-basic", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 1rem;
+  }
+  
+  .titleTwo {
+    font-size: 80px;
+    font-family: "henderson-slab-basic", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .createdBy {
+    opacity: 50%;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  
+  

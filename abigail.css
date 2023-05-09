@@ -1,0 +1,111 @@
+html {
+    background-color: #939967;
+}
+
+
+* {
+    text-decoration: none;
+}
+
+
+/*HEADER CODE BELOW*/
+.header * {
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    float: center;
+    margin: 0 auto;
+    height: 40px;
+    padding:15px 0px 15px;
+    display: block;
+    background-color: #010101;
+
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+.innerHeader{
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    /* background-color: red; */
+
+    /* outline border code below  */
+        /* outline-color: rgb(255, 255, 255);
+        outline-width: 2px;
+        outline-style: dashed;
+        border-radius: 10px; */
+}
+
+.myName{
+    height: 100%;
+    display: table;
+    float: left;
+    margin-left: 20px;
+
+}
+
+.myName h1{
+    font-size: 16px;
+    font-weight: 300;
+    color: #DCDCBF;
+
+    font-family: 'DM Sans', sans-serif;
+
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navigation{
+
+    margin: 0;
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+        /* to give space between the text and the right */
+    padding: 0px 20px;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    /* color: #efebe4; */
+    color: #DCDCBF;
+
+    /* font-family: 'Cabin', sans-serif; */
+    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
+
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.navigation a li:hover{
+    text-decoration: underline;
+    text-decoration-color: #DCDCBF;
+
+}
+/* END OF HEADER CODE */
+
+.about{
+    margin-top: 80px;
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #DCDCBF;
+    font-family: 'DM Sans', sans-serif;
+}

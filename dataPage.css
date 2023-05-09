@@ -1,0 +1,471 @@
+html {
+    background-color: #939967;
+}
+
+* {
+    text-decoration: none;
+}
+
+
+/*HEADER CODE BELOW*/
+.header * {
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    /* float: center; */
+    margin: 0 auto;
+    height: 40px;
+    padding:15px 0px 15px;
+    display: block;
+    background-color: #010101;
+
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+.innerHeader{
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    /* background-color: red; */
+
+    /* outline border code below  */
+        /* outline-color: rgb(255, 255, 255);
+        outline-width: 2px;
+        outline-style: dashed;
+        border-radius: 10px; */
+}
+
+.myName{
+    height: 100%;
+    display: table;
+    float: left;
+    margin-left: 20px;
+
+}
+
+.myName h1{
+    font-size: 16px;
+    font-weight: 400;
+    color: #DCDCBF;
+
+    font-family: 'DM Sans', sans-serif;
+
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navigation{
+
+    margin: 0;
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+        /* to give space between the text and the right */
+    padding: 0px 20px;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    /* color: #efebe4; */
+    color: #DCDCBF;
+
+    /* font-family: 'Cabin', sans-serif; */
+    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
+
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.navigation a li:hover{
+    text-decoration: underline;
+    text-decoration-color: #DCDCBF;
+
+}
+/* END OF HEADER CODE */
+
+
+/* ANIMAL INFORMTION CODE  */
+
+.animalInformation{
+  text-align: center;
+  margin: 0 auto; /* add this line to center horizontally */
+  margin-top: 80px;
+  z-index: -3;
+}
+
+.animalName{
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 400;
+  color: #DCDCBF;
+  font-family: 'DM Sans', sans-serif;
+  z-index: -3;
+}
+
+.animalNumber{
+  font-size: 16px;
+  font-weight: 300;
+  color: #DCDCBF;
+  opacity: 50%;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 20px;
+  z-index: -3;
+}
+
+
+/* END OF ANIMAL INFORMATION CODE  */
+
+
+/* DATA FILTER CODE  */
+.dataFilter {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  transform: translateX(-50%);
+  margin-left: 120px;
+}
+
+.line{
+  background: #DCDCBF;
+  height: 1px;
+  width: 160px;
+}
+
+.filterName {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'DM Sans', sans-serif;
+  color: #DCDCBF;
+  text-align: center;
+  position: relative;
+  padding-bottom: 13px;
+  margin-top: 25px;
+}
+
+.WorkingFilters {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.WorkingFilters select {
+  display: block;
+  margin-bottom: 10px;
+  width: 165px;
+  height: 45px;
+  background-color: #010101;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'DM Sans', sans-serif;
+  color: #DCDCBF;
+  text-align: center; /* updated */
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  -webkit-appearance: menulist-button; /* updated */
+  -moz-appearance: menulist-button; /* updated */
+  appearance: menulist-button; /* updated */
+  padding: 0 20px 0 10px; /* updated */
+}
+
+/* Custom style for dropdown arrow */
+.WorkingFilters select::-ms-expand {
+  display: none;
+}
+
+.WorkingFilters select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #DCDCBF;
+  pointer-events: none;
+}
+
+/* Adjust text alignment */
+
+.WorkingFilters select option {
+  background-color: #010101;
+  color: #DCDCBF;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.WorkingFilters select[name="dropDownBorough"] option {
+  background-color: #010101;
+  color: #DCDCBF;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.dropDownBorough{
+  margin-left: 100px;
+}
+
+p{
+  color: blue;
+}
+
+
+/* END OF DATA FILTER CODE  */
+
+
+
+/* color key filter code  */
+.animalFilterTwo * {
+  text-decoration: none;
+}
+
+.animalFilterTwo {
+  margin: 0 auto; /* add this line to center horizontally */
+  height: 40px;
+  padding: 5px 0px;
+  display: flex;
+  z-index: 1;
+  text-align: center;
+  border-radius: 15px;
+  justify-content: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+}
+
+.animalFilterTwo{
+  background-color: #4A4C37;
+  width: 500px;
+}
+
+.animalFilterInnerHeader {
+  width: 95%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(1, 1, 1, 0.5);
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Version 1: */
+
+.cat {
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.cat h1 {
+font-size: 16px;
+font-weight: 300;
+color: #93957D;
+font-family: 'DM Sans', sans-serif;
+background-color: #4A4C37;
+text-align: center;
+height: 50px;
+width: 120px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.cat:hover h1 {
+color: #DCDCC2;
+z-index: 2;
+background-color: #4c562f;
+border-radius: 10px;
+}
+
+/* Version 2: */
+
+.dog {
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.dog h1 {
+font-size: 16px;
+font-weight: 300;
+color: #93957D;
+font-family: 'DM Sans', sans-serif;
+background-color: #4A4C37;
+text-align: center;
+height: 50px;
+width: 120px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.dog:hover h1 {
+color: #DCDCC2;
+z-index: 2;
+background-color: #868E55;
+border-radius: 10px;
+}
+
+/* Version 3: */
+
+.raccoon {
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.raccoon h1 {
+font-size: 16px;
+font-weight: 300;
+color: #93957D;
+font-family: 'DM Sans', sans-serif;
+background-color: #4A4C37;
+text-align: center;
+height: 50px;
+width: 120px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.raccoon:hover h1 {
+color: #DCDCC2;
+z-index: 2;
+background-color: #697241;
+border-radius: 10px;
+}
+
+/* Version 5: */
+
+.deer {
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.deer h1 {
+font-size: 16px;
+font-weight: 300;
+color: #93957D;
+font-family: 'DM Sans', sans-serif;
+background-color: #4A4C37;
+text-align: center;
+height: 50px;
+width: 120px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.deer:hover h1 {
+color: #DCDCC2;
+z-index: 2;
+background-color: #5c6239;
+border-radius: 10px;
+}
+
+/* Version 6: */
+
+.bird {
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.bird h1 {
+font-size: 16px;
+font-weight: 300;
+color: #93957D;
+font-family: 'DM Sans', sans-serif;
+background-color: #4A4C37;
+text-align: center;
+height: 50px;
+width: 120px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.bird:hover h1 {
+color: #DCDCC2;
+z-index: 2;
+background-color: #3f4624;
+border-radius: 10px;
+}
+
+/* end of animal filter code  */
+
+
+/* actual filter code */
+
+
+#my_dataviz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: 'DM Sans', sans-serif;
+  color: #DCDCC2;
+  font-size: 16px;
+}
+
+/* Center the element horizontally */
+#my_dataviz {
+  position: absolute;
+  left: 50%;
+  /* code below allows for vertical allignemnt to change */
+  /* transform: translateX(-50%); */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .animalFilterTwo {
+    width: 30%;
+  }
+}
