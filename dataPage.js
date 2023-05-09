@@ -159,7 +159,7 @@ function retrieveData(){
           // how to change the color shades, change the data on the .range 
       var color = d3.scaleOrdinal()
         .domain(data)
-        .range(["#868E55", "#66713C", "#525B30", "#3F4723", "#2B3114"])
+        .range(["#7f864f", "#66713C", "#525B30", "#3F4723", "#2B3114"])
       
       // Compute the position of each group on the pie:
       var pie = d3.pie()
